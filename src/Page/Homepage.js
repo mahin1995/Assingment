@@ -2,6 +2,7 @@ import { Slider } from '@mui/material'
 import React from 'react'
 import { Client } from '../component/Client'
 import Footer from '../component/Footer'
+import MultiTabSection from '../component/MultiTabSection'
 import { Service } from '../component/Service'
 import SlideItem from '../component/SlideItem'
 import { Title } from '../component/Title'
@@ -14,8 +15,10 @@ export const Homepage = () => {
           <Service/>
 <Client/>
 <SimpleSlider />
+<MultiTabSection/>
+<MultiTabSection/>
+<MultiTabSection/>
 <Footer/>
-
 
       </div>
   )
