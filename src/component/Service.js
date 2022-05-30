@@ -1,18 +1,13 @@
 import React from 'react'
-import { Button, Form, FormControl, Navbar, Container, Nav ,Card,CardGroup} from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import Chip from '@mui/material/Chip';
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import LocalMallIcon from '@mui/icons-material/LocalMall';
-import { FileDownload } from "@mui/icons-material";
-import TextsmsIcon from '@mui/icons-material/Textsms';
-import { IconButton } from '@mui/material';
 import message from '../images/download.png'
 import software from '../images/download (1).png'
 import wifi from '../images/images.png'
 
 export const Service = () => {
   return (
-    <div style={{marginTop:'50px'}}>
+    <div style={{marginTop:'50px',background:'#F2F2F2',boxShadow: '5px 10px 18px gray'}} className='card'>
 
 
           <div className='col-md-12 col-sm-12'>
@@ -43,7 +38,7 @@ export const Service = () => {
                                           
                                           </Card>
                                           <p  style={{marginRight:'90px'}} >mahabub alam</p>
-                                          <Chip label="hello 1"   style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white'}}  />
+                                          <Chip label="hello 1" component="a" href="#chip" clickable    style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white',marginBottom:'8px'}}  />
 
                                           
                                           </div>
@@ -62,7 +57,7 @@ export const Service = () => {
                                             </Card.Body>
                                           </Card>
                                           <p style={{marginRight:'90px'}}>mahabub alam</p>
-                                          <Chip label="hello 2"  style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white'}} />
+                                       <Chip label="hello 2"  style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white',marginBottom:'8px'}} component="a" href="#chip" clickable  />
                                           </div>
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
@@ -80,7 +75,7 @@ export const Service = () => {
                                         
                                           </Card>
                                           <p style={{marginRight:'90px'}}>mahabub alam</p>
-                                          <Chip label="hello 3"  style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white'}}/>
+                                          <Chip label="hello 3"  style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white',marginBottom:'8px'}} component="a" href="#chip" clickable  />
                                           </div>
 
 

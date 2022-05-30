@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Form, FormControl, Navbar, Container, Nav } from 'react-bootstrap';
+import {  Navbar, Container, Nav } from 'react-bootstrap';
 import Chip from '@mui/material/Chip';
-// import Navbar1 from '../Sidebar/Navbar';
 const Header = () => {
 
 
@@ -17,29 +16,26 @@ const Header = () => {
 
       <div className="header ">
 
-         
 
-
- <Navbar  expand="lg" style={{height:'50px',backgroundColor:'#F2F2F2'}}>
+ <Navbar  expand="lg" style={{height:'80px',backgroundColor:'#F2F2F2'}}>
   <Container>
-    <Navbar.Brand style={styling} href="#home">Home</Navbar.Brand>
+    <Navbar.Brand style={{marginRight:'80px',color:'#FF6F00'}} href="#">Home</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-                <Nav.Link style={styling}  active href="/order">Advertise</Nav.Link>
-                <Nav.Link style={styling} active href="/review">Publishers</Nav.Link>
-                <Nav.Link style={styling} active href="/inventory">Influencers</Nav.Link>
-                <Nav.Link style={styling} active href="/contact">AD Formats</Nav.Link>
-                <Nav.Link style={styling} active href="/contact">Blog</Nav.Link>
-                <Nav.Link style={styling} active href="/contact">ContactUs</Nav.Link>
-                <Nav.Link style={styling} active href="/login"><Chip label="LogIn" variant="outlined" /></Nav.Link>
-                {/* <Nav.Link style={styling} active href="/login"><Chip label="Logout" variant="outlined" /></Nav.Link> */}
+    <Navbar.Collapse id="">
+      <Nav className="me-auto" >
+                <Nav.Link style={styling}  active href="#">Advertise</Nav.Link>
+                <Nav.Link style={styling} active href="#">Publishers</Nav.Link>
+                <Nav.Link style={styling} active href="#">Influencers</Nav.Link>
+                <Nav.Link style={styling} active href="#">AD Formats</Nav.Link>
+                <Nav.Link style={styling} active href="#">Blog</Nav.Link>
+                <Nav.Link style={styling} active href="#">ContactUs</Nav.Link>
+                <Nav.Link style={styling} active href="#"><Chip label="LogIn" variant="outlined" clickable  /><Chip color="success" label="signup" clickable/></Nav.Link>
 
         
       </Nav>
     </Navbar.Collapse>
   </Container>
-</Navbar>
+</Navbar> 
 
       
 
@@ -47,7 +43,6 @@ const Header = () => {
 
 
       </div>
-      {/* <Navbar1/> */}
     </div>
   );
 };

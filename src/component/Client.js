@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Form, FormControl, Navbar, Container, Nav ,Card} from 'react-bootstrap';
 export const Client = () => {
   return (
-    <div style={{backgroundColor:'#644F9C',marginTop:'30px',}}>
+    <div style={{backgroundColor:'#644F9C',marginTop:'30px',boxShadow: '5px 10px 18px gray'}} className='card'>
 
 <div className='col-md-12 col-sm-12'>
                         <h4 style={{color:'#644F9C'}}>AVAILABLE FOR EVERYONE</h4>

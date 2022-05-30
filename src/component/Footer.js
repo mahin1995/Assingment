@@ -45,9 +45,9 @@ const Footer = () => {
           <h6 style={{marginBottom:'10px'}}> Condition</h6>
           <h6 style={{marginBottom:'10px'}}> Blog</h6>
         </div>
-        <div className='col-3'>
+        <div className='col-3' id="div1">
         <h2 style={{color:'#644F9C',marginBottom:'10px',marginLeft:'10px'}}>Support</h2>
-        <h6 style={{marginBottom:'10px'}}> Faq</h6>
+        <h6 style={{marginBottom:'10px'}}> FAQ</h6>
           <h6 style={{marginBottom:'10px'}}> Media kit</h6>
           <h6 style={{marginBottom:'10px'}}> Contact us</h6>
         </div>
