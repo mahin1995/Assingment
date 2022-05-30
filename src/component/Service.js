@@ -1,6 +1,15 @@
 import React from 'react'
-import { Button, Form, FormControl, Navbar, Container, Nav ,Card} from 'react-bootstrap';
+import { Button, Form, FormControl, Navbar, Container, Nav ,Card,CardGroup} from 'react-bootstrap';
 import Chip from '@mui/material/Chip';
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+import { FileDownload } from "@mui/icons-material";
+import TextsmsIcon from '@mui/icons-material/Textsms';
+import { IconButton } from '@mui/material';
+import message from '../images/download.png'
+import software from '../images/download (1).png'
+import wifi from '../images/images.png'
+
 export const Service = () => {
   return (
     <div style={{marginTop:'50px'}}>
@@ -16,12 +25,21 @@ export const Service = () => {
                         </div>
 
 
-                         <div className=' row col-md-12 col-sm-12' style={{display: 'flex'}}>
+                         <div className=' row col-md-12 col-sm-12' style={{ display: 'flex'}}>
 
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
                                           <Card style={{ width: '18rem',height:'200px',clipPath:'circle()' ,marginBottom:'10px'}}>
-                                          <Card.Img variant="top" src="holder.js/100px180" />
+                                            <Card.Title></Card.Title>
+                                            <Card.Body>
+                                              <Card.Text>
+                                              <img style={{height:'120px'}}
+                                                src={message}
+                                                alt="Second slide"
+                                              />
+                                              </Card.Text>
+                                            </Card.Body>
+                                         
                                           
                                           </Card>
                                           <p  style={{marginRight:'90px'}} >mahabub alam</p>
@@ -33,7 +51,15 @@ export const Service = () => {
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
                                           <Card style={{ width: '18rem',height:'200px',clipPath:'circle()' ,marginBottom:'10px'}}>
                                           <Card.Img variant="top" src="holder.js/100px180" />
-                                          
+                                          <Card.Title></Card.Title>
+                                            <Card.Body>
+                                              <Card.Text>
+                                              <img style={{height:'100px'}}
+                                                src={wifi}
+                                                alt="Second slide"
+                                              />
+                                              </Card.Text>
+                                            </Card.Body>
                                           </Card>
                                           <p style={{marginRight:'90px'}}>mahabub alam</p>
                                           <Chip label="hello 2"  style={{width:'120px',marginRight:'90px',backgroundColor:'#644F9C',color:'white'}} />
@@ -41,8 +67,16 @@ export const Service = () => {
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
                                           <Card style={{ width: '18rem' ,height:'200px',clipPath:'circle()',marginBottom:'10px'}}>
-                                          <Card.Img variant="top" src="holder.js/100px180" />
-                                         
+                                          
+                                          <Card.Title></Card.Title>
+                                            <Card.Body>
+                                              <Card.Text>
+                                              <img style={{height:'140px'}}
+                                                src={software}
+                                                alt="Second slide"
+                                              />
+                                              </Card.Text>
+                                            </Card.Body>
                                         
                                           </Card>
                                           <p style={{marginRight:'90px'}}>mahabub alam</p>
@@ -52,6 +86,8 @@ export const Service = () => {
 
                         </div> 
 
-    </div>
+
+
+            </div>           
   )
 }

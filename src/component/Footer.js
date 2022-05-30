@@ -2,77 +2,65 @@
 import React from 'react';
 
 import './footer.css'
+import facebook from '../images/facebook.png'
+import instagram from '../images/instagaram.jpg'
+import youtube from '../images/youtube.png'
 
 
 const Footer = () => {
 
   var logo_img = {
-    width: '50px',
-    height: '40px'
+    width: '30px',
+    height: '40px',
+    marginLeft:'5px'
   }
 
   return (
-    <div className="footer"  >
+    <div className="footer" style={{marginTop:'30px'}} >
 
-      <div className=" middle" >
+      <div className='col' style={{display:'flex'}}>
 
-        <div className="ok" style={{ paddingLeft: '50px', marginRight: '65px' }}>
-          <h1 style={{ fontSize: '30px', color: 'tomato', paddingLeft: '10px' }}> <i class="fab fa-shopify"></i>eShop </h1>
-          <p>There are many popular products you will find our shop, Choose your daily <br />
-            necessary product from our KachaBazar shop and get some special offer.</p>
-          <div style={{ paddingTop: '5px' }}>
-            <p>Follow Us</p>
-            {/* <div className="logo-bar" >
-              <p> <a href="https://www.instagram.com/"> <img style={logo_img} src={insta} alt="" >
-              </img></a> <a href="https://www.facebook.com/"> <img style={logo_img} src={facebook} alt=''/> </a>
-              <a href="https://twitter.com/login?lang=en"> <img style={logo_img} src={twiteer} alt=''/> </a>
-              <a href="https://www.whatsapp.com/"> <img style={logo_img} src={whatsapp} alt=''/> </a></p>
-              
-            </div> */}
+        <div className='col-3'>
+         <h2 style={{color:'#644F9C',marginRight:'20px'}}>social media</h2>
+         <h4> Follow Us</h4>
+          <br/>
+             <div> <img style={logo_img} src={facebook} alt="" >
+              </img> <img style={logo_img} src={instagram} alt=''/> 
+               <img style={logo_img} src={youtube} alt=''/> 
+               </div>
+        </div>
+        <div className='col-3'>
+          <h2 style={{color:'#644F9C',marginBottom:'10px',marginRight:'20px'}}>Link</h2>
+          <h6 style={{marginBottom:'10px'}}> Advertise</h6>
+          <h6 style={{marginBottom:'10px'}}> Publishers</h6>
+          <h6 style={{marginBottom:'10px'}}> Influencers</h6>
+          <h6 style={{marginBottom:'10px'}}> Adformats</h6>
 
           </div>
+        <div className='col-3'>
+        <h2 style={{color:'#644F9C',marginBottom:'10px',marginRight:'60px'}}>Documantation</h2>
+          
+        <h6 style={{marginBottom:'10px'}}> Term&Privecy</h6>
+          <h6 style={{marginBottom:'10px'}}> Policy</h6>
+          <h6 style={{marginBottom:'10px'}}> Condition</h6>
+          <h6 style={{marginBottom:'10px'}}> Blog</h6>
+        </div>
+        <div className='col-3'>
+        <h2 style={{color:'#644F9C',marginBottom:'10px',marginLeft:'10px'}}>Support</h2>
+        <h6 style={{marginBottom:'10px'}}> Faq</h6>
+          <h6 style={{marginBottom:'10px'}}> Media kit</h6>
+          <h6 style={{marginBottom:'10px'}}> Contact us</h6>
         </div>
 
-        <div style={{ marginRight: '65px' }}>
-          <p>Company</p>
-          <hr />
-          <p>Abouts</p>
-          <p>Contacts</p>
-          <p>Carrers</p>
-          <p>Latest News</p>
-          <p>Information</p>
 
-        </div>
 
-        <div style={{ marginRight: '65px' }}>
-          <p>Top Category</p>
-          <hr />
-
-          <p>T-shirts</p>
-          <p>Gents Shirts</p>
-          <p>Gamin Drive</p>
-          <p>Mobile Phone</p>
-          <p>Laptop</p>
-
-        </div>
-
-        <div style={{ marginRight: '65px' }}>
-          <p>My Account</p>
-          <hr />
-
-          <p>Dashboard</p>
-          <p>Account Info</p>
-          <p>My Orders</p>
-          <p>Recent Orders</p>
-          <p>Update Profile</p>
-
-        </div>
-<hr/>
       </div>
+
+     
 
       <div className="col-auto">
         <hr />
-        <p style={{ paddingLeft: '50px',}}>  copyright 2021@<span style={{ color: 'tomato' }}>HtmLover</span>  all rights reserved</p>
+        <p style={{ paddingLeft: '50px',}}>  copyright 2022@<span style={{ color: 'tomato' }}>HtmLover</span>  all rights reserved</p>
 
       </div>
     </div>

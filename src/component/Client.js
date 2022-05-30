@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Form, FormControl, Navbar, Container, Nav ,Card} from 'react-bootstrap';
 export const Client = () => {
   return (
-    <div style={{backgroundColor:'#644F9C',marginTop:'30px',height:'300px'}}>
+    <div style={{backgroundColor:'#644F9C',marginTop:'30px',}}>
 
 <div className='col-md-12 col-sm-12'>
                         <h4 style={{color:'#644F9C'}}>AVAILABLE FOR EVERYONE</h4>
@@ -15,7 +15,7 @@ export const Client = () => {
 
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
-                                          <Card style={{ width: '18rem',height:'200px',clipPath:'circle()',borderStyle:'dotted',backgroundColor:'gray' }}>
+                                          <Card style={{ width: '18rem',height:'200px',clipPath:'circle()',borderStyle:'dotted',backgroundColor:'gray',marginBottom:'10px' }}>
                                           {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                                           <Card.Title></Card.Title>
                                                 <Card.Body>
@@ -31,7 +31,7 @@ export const Client = () => {
                                           </div>
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
-                                          <Card style={{ width: '18rem',height:'200px',clipPath:'circle()',backgroundColor:'white' }}>
+                                          <Card style={{ width: '18rem',height:'200px',clipPath:'circle()',backgroundColor:'white',marginBottom:'10px' }}>
                                           <Card.Title></Card.Title>
                                                 <Card.Body>
 <Card.Text>
@@ -45,7 +45,7 @@ export const Client = () => {
                                           </div>
 
                                           <div className='col-md-3 col-sm-3' style={{marginLeft:'80px'}}>
-                                          <Card style={{ width: '18rem' ,height:'200px',clipPath:'circle()',backgroundColor:'#FF6F00' }}>
+                                          <Card style={{ width: '18rem' ,height:'200px',clipPath:'circle()',backgroundColor:'#FF6F00',marginBottom:'10px' }}>
                                           <Card.Title></Card.Title>
                                                 <Card.Body>
 <Card.Text>
